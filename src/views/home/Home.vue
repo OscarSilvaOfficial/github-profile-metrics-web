@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Timeline :commits="commits" />
+    <Timeline v-if="repository" :repository="repository" />
   </div>
 </template>
 
@@ -15,11 +15,20 @@
     },
     data() {
       return {
-        commits: Array
+        repository: false
       }
     },
-    async created() {
-      this.commits = await getUserMetrics({ user: 'OscarSilvaOfficial' })
+    async beforeCreate() {
+      const userMetrics = await getUserMetrics({ user: 'OscarSilvaOfficial', test: true })
+      userMetrics.map(metrics => {
+        if ('commits' in metrics) {
+          metrics.commits.map(commit => {
+            metrics.name = commit.sha
+          })
+        }
+        // console.log(metrics)
+      })
+      this.repository = userMetrics
     },
   }
 </script>
