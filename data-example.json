@@ -1,0 +1,67 @@
+{
+  "public": true,
+  "created_at": "2021-07-31T03:59:14Z",
+  "type": "PushEvent",
+  "actor": {
+    "login": "OscarSilvaOfficial",
+    "url": "https://api.github.com/users/OscarSilvaOfficial",
+    "avatar": "https://avatars.githubusercontent.com/u/49827992?"
+  },
+  "repo": {
+    "name": "OscarSilvaOfficial/github-profile-metrics-api",
+    "url": "https://api.github.com/repos/OscarSilvaOfficial/github-profile-metrics-api"
+  },
+  "commits": [
+    {
+      "sha": "60ae9e2b1cf0ca1f75a8576eed530f3327c60958",
+      "author": {
+        "email": "oscarkaka222@gmail.com",
+        "name": "OscarSilvaOfficial"
+      },
+      "message": "Verificação do param na request",
+      "distinct": true,
+      "url": "https://api.github.com/repos/OscarSilvaOfficial/github-profile-metrics-api/commits/60ae9e2b1cf0ca1f75a8576eed530f3327c60958"
+    },
+    {
+      "sha": "3b60097ccb371de333263ebe9a4a024651827a10",
+      "author": {
+        "email": "oscarkaka222@gmail.com",
+        "name": "OscarSilvaOfficial"
+      },
+      "message": "Ajuste na consulta da api",
+      "distinct": true,
+      "url": "https://api.github.com/repos/OscarSilvaOfficial/github-profile-metrics-api/commits/3b60097ccb371de333263ebe9a4a024651827a10"
+    },
+    {
+      "sha": "d901c3051f7f4998f7f77268270a73971be11bd2",
+      "author": {
+        "email": "oscarkaka222@gmail.com",
+        "name": "OscarSilvaOfficial"
+      },
+      "message": "Refactor para uma auto chamada",
+      "distinct": true,
+      "url": "https://api.github.com/repos/OscarSilvaOfficial/github-profile-metrics-api/commits/d901c3051f7f4998f7f77268270a73971be11bd2"
+    },
+    {
+      "sha": "3fdfa935801eb3f4d3900623c252b96ecf1f3aa6",
+      "author": {
+        "email": "oscarkaka222@gmail.com",
+        "name": "OscarSilvaOfficial"
+      },
+      "message": "Retorno apenas dos dados necessários",
+      "distinct": true,
+      "url": "https://api.github.com/repos/OscarSilvaOfficial/github-profile-metrics-api/commits/3fdfa935801eb3f4d3900623c252b96ecf1f3aa6"
+    },
+    {
+      "sha": "b2cd3fe4defbd8014908930f98374baaef80938d",
+      "author": {
+        "email": "oscarkaka222@gmail.com",
+        "name": "OscarSilvaOfficial"
+      },
+      "message": "Adição do teste http",
+      "distinct": true,
+      "url": "https://api.github.com/repos/OscarSilvaOfficial/github-profile-metrics-api/commits/b2cd3fe4defbd8014908930f98374baaef80938d"
+    }
+  ],
+  "name": "b2cd3fe4defbd8014908930f98374baaef80938d"
+}
