@@ -20,7 +20,8 @@ const created = async function () {
 }
 
 const filters = {
-  formatEvent: (event) => {
+  formatGithubLink: repository => `https://github.com/${repository}`,
+  formatEvent: event => {
     if ('PushEvent' == event) return 'Push'
     if ('CreateEvent' == event) return 'Create'
     return event

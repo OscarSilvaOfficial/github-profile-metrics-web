@@ -1,34 +1,33 @@
 <template>
-  <v-row>
+  <v-row style="height: 100vh">
     <v-col
-      cols="12"
-      sm="6"
-      offset-sm="3"
+      cols="8"
+      sm="4"
+      offset-sm="4"
+      class="d-flex justify-center align-center"
     >
       <v-card>
-        <v-list two-line>
+        <v-list two-line style="height: 500px; overflow: auto">
           <template v-for="statistics in userGithubStatistics">
-            <v-list-item
-              :key="statistics.id"
-            >
+            <v-list-item :key="statistics.id">
               <v-list-item-avatar>
-                <img :src="statistics.actor.avatar">
+                <img :src="statistics.actor.avatar" />
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>
-                  <a target="_blank" :href="'https://github.com/' + statistics.repo.name">
-                    {{ statistics.repo.name }}
-                  </a>
+                  <a
+                    v-html="statistics.repo.name"
+                    style="text-decoration: none; color: #101010"
+                    target="_blank"
+                    :href="statistics.repo.name | formatGithubLink"
+                  ></a>
                 </v-list-item-title>
                 <v-list-item-subtitle>
-                  {{ statistics.type | formatEvent }}
+                  Ação: {{ statistics.type | formatEvent }}
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-divider
-              :key="statistics.id"
-              inset
-            ></v-divider>
+            <v-divider :key="statistics.id" inset></v-divider>
           </template>
         </v-list>
       </v-card>
@@ -37,6 +36,6 @@
 </template>
 
 <script>
-import Home from './index'
-export default Home
+import Home from "./index";
+export default Home;
 </script>
